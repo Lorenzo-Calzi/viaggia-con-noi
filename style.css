@@ -2,13 +2,54 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
 
+/*HEADER*/
+header{
     height: 30vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+
+/*MAIN*/
+main{
+    height: 20vh;
+    width: 100%;
+    background-color: #4480b6;
+}
+.content{
+    height: 100%;
+    width: 90%; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+.title{
+    margin: 0 0 20px 0;
+}
+.subtitle{
+    margin: 0;
+}
+
+
+/*INFO*/
+.infos{
+    height: 50vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.info-name{
+    color: red;
 }
