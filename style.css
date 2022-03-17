@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 
@@ -41,12 +41,39 @@ main{
     color: white;
 }
 .data-title .title{
-    margin: 0 0 10px 0;
+    margin: 0 0 0 0;
     font-weight: 400;
 }
 .data-title .subtitle{
-    margin: 0;
+    margin: 0 0 2px 0;
     color: #bbddf9;
+}
+.data-title #copy-text{
+   font-size: 14px;
+}
+.data-title button{
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin-right: 5px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 2px #999;
+}
+.data-title button:hover{
+    background-color: rgb(196, 196, 196);
+    cursor: pointer;
+}
+.data-title button:active{
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+}
+.data-title button:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #757575;
+    box-shadow: none;
+    border: none;
+    cursor: not-allowed;
 }
 
 
@@ -56,7 +83,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-item s: flex-start;
     justify-content: flex-start;
 }
 .data-info .info{

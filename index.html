@@ -20,7 +20,11 @@
         <div class="data-title">
             <div class="container">
                 <h1 class="title">Viaggia Con Noi</h1>
-                <p class="subtitle">IBAN: IT66C0100503382000000218020</p>
+                <p class="subtitle">IBAN: <span id="iban">IT66C0100503382000000218020</span></p>
+                <div class="button">
+                   <button id="copy-button" onclick="copyText()">Copia</button>
+                   <span id="copy-text"></span>
+                </div>
             </div>
         </div>
 
@@ -56,5 +60,22 @@
             </div>
         </div>
     </main>
+
+    <script>
+        const txt_data = document.getElementById('iban').textContent
+        const button = document.getElementById('copy-button')
+
+
+        function copyText() {
+            navigator.clipboard.writeText(txt_data)
+            document.getElementById("copy-text").innerHTML = `<i class="fa-solid fa-circle-check"></i>`;
+            button.disabled = true
+
+            setTimeout (function () {
+               document.getElementById("copy-text").innerHTML = "";
+               button.disabled = false
+            }, 3000);
+        }
+    </script>
 </body>
 </html>
