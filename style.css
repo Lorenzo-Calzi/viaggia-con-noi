@@ -75,6 +75,34 @@ main{
     border: none;
     cursor: not-allowed;
 }
+@media only screen and (max-width: 1024px) {
+    .data-title button{
+        border-radius: 3px;
+        padding: 3px 5px;
+        margin-right: 5px;
+        border: none;
+        background-color: white;
+        box-shadow: none;
+    }
+    .data-title button:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+    .data-title button:active{
+        background-color: white;
+        box-shadow: none;
+        transform: none;
+    }
+    .data-title button:disabled{
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #757575;
+        box-shadow: none;
+        border: none;
+        cursor: not-allowed;
+    }
+}
+
 
 
 /*DATA-INFO*/
