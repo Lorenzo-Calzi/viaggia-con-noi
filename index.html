@@ -61,21 +61,5 @@
         </div>
     </main>
 
-    <script>
-        const txt_data = document.getElementById('iban').textContent
-        const button = document.getElementById('copy-button')
-
-
-        function copyText() {
-            navigator.clipboard.writeText(txt_data)
-            document.getElementById("copy-text").innerHTML = `<i class="fa-solid fa-circle-check"></i>`;
-            button.disabled = true
-
-            setTimeout (function () {
-               document.getElementById("copy-text").innerHTML = "";
-               button.disabled = false
-            }, 3000);
-        }
-    </script>
 </body>
 </html>
