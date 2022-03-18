@@ -81,7 +81,7 @@ main{
 /*DATA-INFO*/
 .data-info{
     width: 100%;
-    padding: 12px 0 0 0;
+    padding: 15px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -115,6 +115,9 @@ main{
     align-items: flex-start;
     padding: 5px 0 15px 0;
     border-bottom: 1px solid grey;
+}
+.last-info-right{
+    border-bottom: none !important;
 }
 .data-info .info .right .info-name{
     margin: 0 0 12px 0;
