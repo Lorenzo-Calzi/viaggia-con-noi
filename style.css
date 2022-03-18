@@ -80,7 +80,6 @@ main{
 
 /*DATA-INFO*/
 .data-info{
-    height: 75%;
     width: 100%;
     padding: 10px 0;
     display: flex;
@@ -90,7 +89,7 @@ main{
 }
 .data-info .info{
     width: 90%;
-    margin: auto;
+    margin: 0 auto 15px auto;
     display: flex;
     align-items: flex-start;
 }
